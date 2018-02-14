@@ -1,0 +1,15 @@
+# Es un comentarios en htaccess
+# https://es.wikipedia.org/wiki/.htaccess
+# http://httpd.apache.org/docs/2.2/howto/htaccess.html#how
+# http://librosweb.es/tutorial/trucos-y-ejemplos-de-configuracion-del-archivo-htaccess-de-apache/
+
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteBase /aCursos/Web/07OptimizacionSitiosPHP/v4-urls-amigables/
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^(.*)$ index.php?p=$1 [L]
+# RewriteRule ^(.*)/(.*)-(.*)$ index.php?sec=$1&cat=$2&otra=$3 [L]

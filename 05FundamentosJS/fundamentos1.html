@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<title>Fundamentos de Programación en JavaScript parte 1</title>
+	<meta name="description" content="En este ejercicio entenderemos fundamentos de programación en JavaScript" />
+	<style>
+		body, html { font-family: Helvetica, sans-serif; font-size: 16px; }
+	</style>
+</head>
+<body>
+	<h1>Fundamentos de Programación en JavaScript parte 1</h1>
+	<p><a href="index.html">Regresar al inicio</a></p>
+	<h2>Definiendo un Perro</h2>
+	<script>
+		//comentario de una linea
+		/*
+		comentario
+		multilinea
+		*/	
+		function Perro(n,r,e,s,a,f,c)
+		{
+			//this dentro de una función es el objeto que se define en la función
+			var o = this;
+			var imagen; //se define despues para explicar el contexto de las variables
+
+			o.nombre = n;
+			o.raza = r;
+			o.edad = e;
+			//o.sexo = s;
+			o.adiestrado = a;
+			o.foto = f;
+
+			//Asignación ( 1 igual = )
+			//Comparación ( 2 iguales == compara que los valores sean iguales )
+			//Idéntico ( 3 iguales === compara que los valores y su tipo de dato sean idénticos )	
+			//o.sexo = (s==true)?"Macho":"Hembra";
+			//o.sexo = (s==false)?"Hembra":"Macho";
+			//o.sexo = (!s)?"Hembra":"Macho";
+			//o.sexo = (s===true)?"Macho":"Hembra"; //poner 1 en lugar de true en la definición del parametro para explicar
+
+			//operador ternario
+			//variable  = (condicion)?verdadero:falso
+			o.sexo = (s)?"Macho":"Hembra";
+			//console.log(typeof s, typeof n, typeof e);
+
+			o.aparecer = function()
+			{
+				//alert("El objeto aparece");
+				//var imagen = document.createElement("img");
+				imagen = document.createElement("img");
+				imagen.src = o.foto;
+				imagen.alt = o.nombre;
+				imagen.title = o.nombre;
+				document.body.appendChild(imagen);
+			}
+
+			o.ladrar = function()
+			{
+				alert("Guauu!!! Guauu!!!");
+				var audio = document.createElement("audio");
+				audio.src = "activos/guau.mp3";
+				//audio.controls = true;
+				//document.body.appendChild(audio);
+				return audio.play();
+			}
+
+			o.comer = function(c)
+			{
+				o.comida = c;
+				
+				var alerta = alert(o.nombre+" comió "+o.comida);
+				return alerta;
+			}
+
+			o.mover =function()
+			{
+				//alert("El objeto se ha movido");
+				imagen.style.position = "relative";
+				imagen.style.left = "10em";
+				imagen.style.borderRadius = "100%";
+			}
+		}
+
+		function iniciar()
+		{
+			//alert("Ejecutando función iniciar");
+			var kenai = new Perro("kenai","Firefox",2,true,true,"activos/kenai.jpg");
+
+			//alert(kenai);
+			document.write(kenai+"<br />"+window+"<br />"+document+"<br />"+navigator);
+
+			//console.log(kenai,window,navigator,document);
+
+			document.write("<p>"+kenai.nombre+"</p>");
+			document.write("<p>"+kenai.raza+"</p>");
+			document.write("<p>"+kenai.edad+"</p>");
+			document.write("<p>"+kenai.sexo+"</p>");
+			document.write("<p>"+kenai.adiestrado+"</p>");
+			
+			kenai.aparecer();
+			kenai.ladrar();
+			kenai.comer("tacos");
+			kenai.comer("croquetas");
+			kenai.mover();
+		}
+
+		iniciar();
+	</script>
+	<!-- 
+	Más sobre objetos en JS:
+		http://hardcoders.mx/blog/2012/12/27/objetos-en-javascript/
+	-->
+</body>
+</html>

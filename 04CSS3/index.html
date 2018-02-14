@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<title>La Magia de CSS3</title>
+	<meta name="description" content="En este ejercicio veremos las reglas CSS implementadas en la versión 3." />
+	<link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+	<!-- http://pastebin.com/irTEFMCL -->
+	<h1>La Magia de CSS3</h1>
+	<article id="bordes">
+		<h2>Bordes Redondeados</h2>
+		<p>Esto está pachoncito</p>
+	</article>
+	<article id="rgba">
+		<h2>Colores RGBA</h2>
+		<p>Manejo de colores en escala rgb(0-255) y opacidad alpha(0 al 1).</p>
+	</article>
+	<article id="fuentes">
+		<h2>Fuentes externas</h2>
+		<p>Esta fuente se llama Pecita</p>
+	</article>
+	<article id="fuentes-google">
+		<h2>Fuentes desde Google Web Fonts</h2>
+		<p>Esta fuente se llama Open Sans</p>
+	</article>
+	<article id="fuentes-unidades">
+		<p>font-size en ems, hereda el tamaño del padre</p>
+		<p>font-size en rems, hereda el tamaño del html</p>
+	</article>
+	<article id="sombras">
+		<h2>Sombras</h2>
+		<p>Sombra al texto y al contenedor</p>
+	</article>
+	<article>
+		<h2>Gradientes</h2>
+		<p id="glineal" class="gradientes">Lineal</p>
+		<p id="gradial" class="gradientes">Radial</p>
+	</article>
+	<article>
+		<h2>Ajuste de Texto</h2>
+		<p id="ajuste-texto">qwertyuiopasdfghjklñzxcvbnm</p>
+	</article>
+	<article>
+		<h2>Texto en columnas</h2>
+		<p id="texto-columnas">
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, voluptates. Ea ipsa alias atque officia qui quisquam, rerum natus optio quidem explicabo reprehenderit ipsam eum excepturi consectetur placeat porro, laudantium.</span>
+			<span>Ad possimus optio dolores? Sapiente tempora obcaecati dolore alias pariatur eaque magni. Asperiores nostrum consequuntur, corrupti iure neque soluta, accusantium perferendis in eius. Itaque reprehenderit rerum neque, quis amet repellat.</span>
+			<span>Praesentium natus dignissimos eligendi sint, esse iusto possimus odit quibusdam doloribus vel temporibus atque blanditiis deserunt similique culpa! Dolorum, sint libero sunt aperiam id dolorem, quas officiis a sapiente rerum?</span>
+			<span>Enim dolorum fugiat, perspiciatis tempora asperiores nihil eligendi sunt voluptas ratione et vero hic ut iure obcaecati doloremque quibusdam consequatur aut, amet impedit assumenda quidem nemo. Sed distinctio asperiores necessitatibus!</span>
+			<span>Debitis blanditiis accusamus animi. A dolorem numquam quisquam dolor odio nihil error reprehenderit perspiciatis, culpa illum dignissimos vero hic, aspernatur natus porro temporibus laudantium molestias ea voluptatem architecto fugiat nemo.</span>
+			<span>Sapiente alias deleniti libero, saepe laboriosam perferendis, sint quod numquam et maxime tempora omnis quasi unde, odio obcaecati. Asperiores explicabo aperiam possimus reiciendis blanditiis suscipit sequi. Cum sit est, maiores.</span>
+		</p>
+	</article>
+	<article>
+		<h2>Tamaño de Caja</h2>
+		<p class="tamanio-caja">
+			Con <code>box-sizing:content-box;</code><br />
+			Si usamos border, padding y margin, éstos harán crecer nuestro width y height, es decir, la caja ENGORDA. Es el comportamiento por defecto del Modelo de Caja en CSS.
+		</p>
+		<p class="a-dieta tamanio-caja">
+			Con <code>box-sizing:border-box;</code><br />
+			Si usamos border, padding y margin, éstos ya estarán incluidos en el width y/o height establecidos, es decir, la caja se mantiene saludable y en su peso.
+		</p>
+	</article>
+	<article id="fondos-multiples">
+		<h2>Fondos Múltiples</h2>
+		<p>Podemos tener tantas imágenes de fondo, como queramos</p>
+	</article>
+	<article id="fondo-area">
+		<h2>Área de Fondo</h2>
+		<p>
+			Se utiliza para determinar desde donde se visualizará el fondo respecto de su contenedor. Podemos especificar el área de fondo desde:
+			<ul>
+				<li>El borde (border)</li>
+				<li>El relleno (padding)</li>
+				<li>El contenido (content)</li>
+			</ul>
+		</p>
+	</article>
+	<article id="fondo-origen">
+		<h2>Origen de Fondo</h2>
+		<p>
+			Se utiliza para calcular la posicion de origen del fondo respecto de su contenedor. Podemos especificar el origen del fondo desde:
+			<ul>
+				<li>El borde (border)</li>
+				<li>El relleno (padding)</li>
+				<li>El contenido (content)</li>
+			</ul>
+		</p>
+	</article>
+	<article id="fondo-tamanio">
+		<h2>Tamaño de Fondo</h2>
+		<p>
+			Podemos modificar el tamaño de fondo:
+			<ul>
+				<li>Por medidas (px,%,etc.)</li>
+				<li>Adaptando la imagen a la altura del contenedor sin deformarla (contain)</li>
+				<li>Adaptando la imagen a la anchura del contenedor sin deformarla (cover)</li>
+			</ul>
+		</p>
+	</article>
+	<article class="transformaciones">
+		<h2>Transformaciones 2D</h2>
+		<p id="t-traslacion">Traslación</p>
+		<p id="t-rotacion">Rotación</p>
+		<p id="t-escala">Escala</p>
+		<p id="t-sesgar">Sesgar</p>
+		<p id="t-todas">Todas</p>
+	</article>
+	<article id="transiciones" class="cambio">
+		<h2>Transiciones</h2>
+		<p>Este bloque tiene un efecto de transición</p>
+	</article>
+	<article class="transformaciones">
+		<h2>Transformaciones 3D</h2>
+		<p id="tx-rotacion" class="cambio">Rotación X</p>
+		<p id="ty-rotacion" class="cambio">Rotación Y</p>
+		<p id="tz-rotacion" class="cambio">Rotación Z</p>
+	</article>
+	<article id="animaciones">
+		<h2>Animaciones</h2>
+		<div id="pacman" class="animado">
+			<div id="ojo"></div>
+		</div>
+	</article>
+</body>
+</html>

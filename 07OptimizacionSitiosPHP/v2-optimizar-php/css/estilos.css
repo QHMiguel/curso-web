@@ -1,0 +1,8 @@
+html {
+	font-size: 32px;
+	font-family: sans-serif;
+	color: #444;
+	background-color: skyblue;
+}
+
+mark { font-size: 3rem; }

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+	<!-- 
+	comentario HTML
+
+	Sublime
+		Atajos del teclado en SublimeText
+			http://falasco.org/sublime-text-2-cheat-sheet
+		Instalación Control Package y Emmet
+			http://sublime.wbond.net/installation
+		Aprender ZenCoding
+			http://code.google.com/p/zen-coding/
+
+	Etiquetas HTML
+		https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list
+
+	Disposición de los elementos en HTML (display)
+	Hay 2 tipos de disposición por defecto
+	En linea: display:inline
+		El elemento sólo ocupa el espacio necesario a lo ancho. 
+		Etiquetas en linea:
+			span, img, a, b, i, strong, mark, iframe, audio, video.
+	En bloque: display:block
+		El elemento ocupa todo el espacio a lo ancho, aunque no  lo ocupe todo (es envidioso). Etiquetas en bloque:
+			div, h1...h6, p, header, nav, footer, section, article, aside.
+	-->
+	<meta charset="UTF-8" />
+	<title>Etiquetas HTML</title>
+	<meta name="description" content="En este documento revisaremos algunas etiquetas básicas de HTML." />
+	<style>
+		a 
+		{
+			color: sandybrown;
+			text-decoration: none;
+		}
+
+		a:hover
+		{
+			color: rosybrown;
+			font-size: 200%;
+		}
+
+		div, h1, h3, h5
+		{
+			background: orange;
+			/* display: block; */
+		}
+
+		iframe
+		{
+			height: 600px;
+			width: 80%;
+		}
+
+		ol { list-style: lower-greek; }
+
+		span, h2, h4, h6, img
+		{ 
+			background: skyblue;
+			/* display: inline; */
+		}
+
+		ul { list-style-type: square; }
+	</style>
+</head>
+<body>
+	<p>
+		Contenido del documento, mi primer página diseñada en HTML5
+	</p>
+	<img src="HTML5.png" alt="HTML5" title="Logo HTML5" border="10" width="256" height="256" />
+	<div id="arriba">Esto es una div</div>
+	<span>Esto es una span</span>
+	<!-- h${Encabezado de tipo $}*6 -->
+	<h1>Encabezado de tipo 1</h1>
+	<h2>Encabezado de tipo 2</h2>
+	<h3>Encabezado de tipo 3</h3>
+	<h4>Encabezado de tipo 4</h4>
+	<h5>Encabezado de tipo 5</h5>
+	<h6>Encabezado de tipo 6</h6>
+	<p>
+		Esto es un párrafo. Y éste texto está en <b>negritas</b>, <i>cursiva</i>, <u>subrayado</u>. <strong>Esta parte es importante</strong>, <mark>esta parte esta resaltada</mark>, <em>esto tiene énfasis</em> y estas son <small>letras chiquitas, como en los contratos</small>.
+	</p>
+	<p>
+		La fórmula del agua es H<sub>2</sub>O.
+		<br /><hr /><br />
+		La fórmula de la relatividad de Einstein es e = mc<sup>2</sup>.
+	</p>
+	<h2>Listas desordenadas (viñetas)</h2>
+	<ul>
+		<li>Primavera</li>
+		<li>Verano</li>
+		<li>Otoño</li>
+		<li>Invierno</li>
+	</ul>
+	<h2>Listas ordenadas (numeración)</h2>
+	<ol>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JS</li>
+		<li>AJAX</li>
+		<li>PHP</li>
+		<li>MySQL</li>
+	</ol>
+	<h2>Listas multinivel</h2>
+	<ul>
+		<li>
+			Frontend:
+			<ol>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JS</li>
+			</ol>
+		</li>
+		<li>
+			Backend:
+			<ol>
+				<li>AJAX</li>
+				<li>PHP</li>
+				<li>MySQL</li>
+			</ol>
+		</li>
+	</ul>
+	<a href="http://google.com" target="_blank">Google</a>
+	<a href="http://w3.org/html/logo">
+		<img src="HTML5.png" alt="HTML5" />
+	</a>
+	<a href="mailto:j@bextlan.com">j@bextlan.com</a>
+	<a href="#arriba">Pa' rriba</a>
+	<br /><br />
+	<iframe src="HTML5.pdf">
+		Tu navegador no soporta IFRAMEs
+	</iframe>
+	<iframe src="http://cursos.bextlan.com/web"></iframe>
+	<iframe width="640" height="360" src="http://www.youtube.com/embed/5NV6Rdv1a3I" frameborder="0" allowfullscreen></iframe>
+	<iframe width="640" height="360" src="http://www.youtube.com/embed/lglK7DclpZw" frameborder="0" allowfullscreen></iframe>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2624.99162985171!2d2.294481!3d48.85837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre+Eiffel!5e0!3m2!1ses-419!2smx!4v1417053056695" width="400" height="300" frameborder="0" style="border:0"></iframe>
+</body>
+</html>

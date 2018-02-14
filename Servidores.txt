@@ -1,0 +1,21 @@
+Servidores
+	Compartidos
+		(LAMP-Cpanel-FTP-Más baratos-Pago Anual-Entornos Freelance)
+		http://es.wikipedia.org/wiki/Alojamiento_compartido
+	Dedicados
+		http://es.wikipedia.org/wiki/Servicio_de_alojamiento_dedicado
+		(Renta de un servidor físico-Muy Caro-Pago mensual-Entornos empresariales)
+	Virtuales (VPS)
+		(Servidor Dedicado Virtual +-Precio - Terminal de Comandos - SSH - Pago Mensual-Entornos Freelance)
+		http://es.wikipedia.org/wiki/Servidor_virtual_privado
+	En la Nube (Cloud)
+		(Plataforma de servicios-Pago mensual-Entornos empresariales)
+		http://es.wikipedia.org/wiki/Computaci%C3%B3n_en_la_nube
+
+Dominios
+	nombre de mi página (bextlan.com)
+	http://es.wikipedia.org/wiki/Dominio_de_Internet
+
+Hospedajes
+	Contratar con una empresa de hosting el servicio de que mi sitio o app este 24/7 disponible en internet
+	http://es.wikipedia.org/wiki/Alojamiento_web

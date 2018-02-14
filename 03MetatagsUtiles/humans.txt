@@ -1,0 +1,19 @@
+/* bextlan.com | lugar de... bits, vectores y pixeles. - http://bextlan.com */
+
+/* TEAM */
+	Fundador: Jonathan MirCha
+	Contacto: jonmircha[at]bextlan.com
+	Twitter: @jonmircha
+	From: Mexico, DF
+
+/* THANKS */
+	@w3c http://www.w3.org/
+
+/* SITE */
+	Last update: 2014/08/19
+	Language: Español
+	Standars: HTML5, CSS3
+	Components: Responsive Design, Google Fonts
+	Software: SublimeText3, SublimeText2, Fireworks, Illustrator
+
+/* http://humanstxt.org/ */
